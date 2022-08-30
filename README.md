@@ -1,4 +1,4 @@
-# Dev-Dite
+# Dev-Site
 
 ## Projeto em VueJS para prática 
 
