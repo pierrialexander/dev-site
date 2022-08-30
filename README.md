@@ -1,6 +1,6 @@
-#Dev-Site
+# Dev-Dite
 
-###Projeto VueJs
+## Projeto em VueJS para prática 
 
-Aplicação para prática e estudo do VueJS.
-Consiste em uma aplicação com consumo de API utilizando o Axios.
+<p>Consiste em uma aplicação com consumo de API utilizando o Axios.</p>
+
