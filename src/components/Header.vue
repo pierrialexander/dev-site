@@ -2,16 +2,16 @@
 <template>
     <header>
         <nav class="container">
-            <a href="/"><img src="https://cdn.svgporn.com/logos/vuetifyjs.svg?response-content-disposition=attachment%3Bfilename%3Dvuetifyjs.svg" id="logo" alt="DEV"></a>            <img id="menu-button" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/menu.svg" alt="Abrir Menu" v-on:click="openMenu">
+            <router-link to="/"><img src="https://cdn.svgporn.com/logos/vuetifyjs.svg?response-content-disposition=attachment%3Bfilename%3Dvuetifyjs.svg" id="logo" alt="DEV"></router-link><img id="menu-button" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/menu.svg" alt="Abrir Menu" v-on:click="openMenu">
 
             <div id="menu-overlay" v-if="menuActive" v-on:click="closeMenu"></div>
             <div id="menu-items" :class="{active: menuActive}">
                 <img src="https://cdn.svgporn.com/logos/vuetifyjs.svg?response-content-disposition=attachment%3Bfilename%3Dvuetifyjs.svg" id="menu-logo" alt="DEV">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/video">Vídeo</a></li>
-                    <li><a href="/sobre">Sobre</a></li>
-                    <li><a href="/contato">Contato</a></li>
+                    <li v-on:click="closeMenu"><router-link to="/">Home</router-link></li>
+                    <li v-on:click="closeMenu"><router-link to="/video">Vídeo</router-link></li>
+                    <li v-on:click="closeMenu"><router-link to="/sobre">Sobre</router-link></li>
+                    <li v-on:click="closeMenu"><router-link to="/contato">Contato</router-link></li>
                 </ul>
             </div>
 

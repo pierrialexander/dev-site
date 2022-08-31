@@ -57,6 +57,7 @@ export default {
     .video a {
         color: var(--color-text-dark);
         font-weight: 600;
+        text-align: center;
     }
 
     @media(min-width: 700px) {
